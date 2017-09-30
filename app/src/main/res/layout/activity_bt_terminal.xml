@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BTTerminal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPayload"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/btnClear"
+        android:clickable="false"
+        android:capitalize="none"
+        android:editable="true"
+        android:focusable="true"
+        android:enabled="true"
+        android:visibility="visible"
+        android:autoText="false"
+        android:hint="Input payload"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/btnLoad">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/btnClear"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnGo"
+        android:layout_toStartOf="@+id/btnGo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/btnGo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtPayload"
+        android:layout_alignEnd="@+id/txtPayload" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/btnDisConn"
+        android:layout_alignTop="@+id/btnClear"
+        android:layout_toLeftOf="@+id/btnClear"
+        android:layout_toStartOf="@+id/btnClear" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/btnLoad"
+        android:layout_below="@+id/txtName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_alignBottom="@+id/btnLoad"
+        android:layout_toRightOf="@+id/btnLoad"
+        android:layout_toEndOf="@+id/btnLoad" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnGo"
+        android:layout_alignEnd="@+id/btnGo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

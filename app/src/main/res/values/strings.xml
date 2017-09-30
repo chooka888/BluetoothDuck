@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BTTest</string>
+    <string name="message_BT_Not_Available">Bluetooth device not available</string>
+</resources>
